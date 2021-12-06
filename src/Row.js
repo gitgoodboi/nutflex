@@ -10,9 +10,6 @@ const Row = ({title, fetchUrl, isLargeRow}) => {
     const { data, error } = useSWR(fetchUrl, fetcher);
     if (error) return <div>failed to load</div>
     if (!data) return <div>loading...</div>
-  // render data
-//   return <div> {data.name}</div>
-console.log(data);
 
     return ( 
         
